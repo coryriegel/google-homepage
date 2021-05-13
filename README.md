@@ -1,0 +1,1 @@
+This is a mock up of the Google Homepage. This was created during the Foundations course within The Odin Project.
