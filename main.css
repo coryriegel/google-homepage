@@ -2,7 +2,7 @@
     display: grid;
     height: 50px;
     grid-template-columns: 1fr 4fr 1fr;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 100px;
 }
 .header-left {
     display: grid;
@@ -109,25 +109,24 @@
 }
 .logo {
     display: grid;
-    height: 140px;
-    align-content: center;
-    justify-content: center;
-    margin: 40px 0px 0px 20px;
+    height: 200px;
+    place-content: end center;
+    margin: 0px 0px 0px 20px;
 }
 .searchbar-container {
     display: grid;
-    height: 50px;
-    align-content: center;
-    justify-content: center;
+    height: 100px;
+    place-content: center;
 }
 .searchbar {
     width: 580px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-area: 2/3;
-    border: 1px solid #dfe1e5;
+    grid-area: 2 / 3 / auto / auto;
+    border: 1px solid rgb(223, 225, 229);
     border-radius: 24px;
     margin: 0px 0px 0px 5px;
+    height: fit-content;
 }
 .searchbar:hover {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
@@ -161,12 +160,12 @@
 .buttons-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100px;
+    height: 50px;
+    margin: 0px 0px 430px 0px;
 }
 .search-container {
     display: grid;
-    justify-self: end;
-    align-self: center;
+    place-self: center end;
     margin: 0px 5px 5px 0px;
 }
 .search-button {
@@ -184,8 +183,7 @@
 }    
 .lucky-container {
     display: grid;
-    justify-self: start;
-    align-self: center;
+    place-self: center start;
     margin: 0px 0px 5px 5px;
 }
 .lucky-button {
@@ -201,14 +199,11 @@
 .lucky-button:hover {
     box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 15%);
 }
-.spacer2 {
-    height: 270px;
-}
 .footer {
     display: grid;
     height: 50px;
     grid-template-columns: 1fr 3fr 1fr;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
 }
 .footer-left {
     display: grid;
